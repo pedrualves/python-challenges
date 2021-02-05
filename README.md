@@ -1,2 +1,2 @@
 # python-challenges
-only to practice more python
+The objective from this repository is only register some challenges using python
