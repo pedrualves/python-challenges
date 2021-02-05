@@ -1,4 +1,4 @@
-import math
+from math import sqrt
 from fractions import Fraction
 
 
@@ -17,16 +17,16 @@ def resolve_segundo_grau(a: int, b: int, c: int):
             print('delta negativo, não admite solução')
         return
 
-    raiz = math.sqrt(delta)
+    raiz = sqrt(delta)
 
     x1 = ((-1 * b) + raiz) / (2 * a)
     if not isinstance(x1, int):
         x1 = Fraction(x1).limit_denominator(10)
-    
+
     x2 = ((-1 * b) - raiz) / (2 * a)
     if not isinstance(x2, int):
         x2 = Fraction(x2).limit_denominator(10)
-        
+
     print(x1, x2)
     return
 
