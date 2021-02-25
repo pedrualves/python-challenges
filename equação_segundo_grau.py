@@ -20,7 +20,7 @@ def resolve_segundo_grau(a: int, b: int, c: int):
                 x1 = Fraction(x1).limit_denominator(10)
 
             if delta == 0:
-                print(x1, (-1) * x1)
+                print(x1, x1)
             
             else:
                 x2 = ((-1 * b) - raiz) / (2 * a)
