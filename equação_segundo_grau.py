@@ -26,7 +26,7 @@ def resolve_segundo_grau(a: int, b: int, c: int):
     return
 
 
-resolve_segundo_grau(3, -1, -2)  # resultado: 1 e 2/3
+resolve_segundo_grau(3, -1, -2)  # resultado: 1 e -2/3
 resolve_segundo_grau(2, -7, 0)  # resultado: 7/2 0
 resolve_segundo_grau(4, 0, 2)  # resultado: equação incompleta, com raiz com número negativo, logo conjunto solução é 0
 resolve_segundo_grau(4, 0, -16)  # resultado: 2 e -2
