@@ -25,15 +25,16 @@ def resolve_segundo_grau(a: float, b: float, c: float):
 
 
 def _confere_numeros(a: float, b: float, c: float):
-    if a == 0:
-        raise Exception('Não é uma equação de segundo grau!')
-
-    if b == 0 and c == 0:
-        return 0, 0
-
     try:
         float(a)
         float(b)
         float(c)
     except ValueError:
         raise ValueError('valor errado mermão')
+    
+    if a == 0:
+        raise Exception('Não é uma equação de segundo grau!')
+    
+    if b == 0 and c == 0:
+        return 0, 0
+    
