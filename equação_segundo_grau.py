@@ -20,7 +20,6 @@ def resolve_segundo_grau(a: int, b: int, c: int):
 
             if delta == 0:
                 return str(x1) + ' ' + str(x1)
-            
             else:
                 x2 = ((-1 * b) - raiz) / (2 * a)
                 if not isinstance(x2, int):
