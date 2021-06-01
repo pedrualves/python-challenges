@@ -1,5 +1,5 @@
 import unittest
-from equação_segundo_grau import resolve_segundo_grau
+from equacao_segundo_grau import resolve_segundo_grau
 
 
 class EquacaoSegundoGrauTest(unittest.TestCase):
@@ -17,6 +17,10 @@ class EquacaoSegundoGrauTest(unittest.TestCase):
         x1, x2 = resolve_segundo_grau(2, 0, 0)
         self.assertEqual(x1, 0)
         self.assertEqual(x2, 0)
+
+        x1, x2 = resolve_segundo_grau(4, 0, -16)
+        self.assertEqual(x1, 2)
+        self.assertEqual(x2, -2)
 
         x1, x2 = resolve_segundo_grau(2, -7, 0)
         self.assertEqual(str(x1), '7/2')
